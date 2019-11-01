@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+.card1{
+  
+  background:gray;
+  border: 2px solid black;
+  margin: 0 70px 20px 70px;
+
+}
+
+
 /* navbar Slider container */
 
 .Slider{
