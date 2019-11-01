@@ -10,15 +10,14 @@ class PlayerCard extends React.Component {
       };
     }
 
-    // componentDidMount() {
-    //     console.log("first render(mounting)");
-    //     axios
-    //     .get("http://localhost:5000/api/players")
-    //     .then(res => console.log(res.data))
-
-        // .then(res => this.setState({ players: res.data }))
-        //.catch(err => console.log("error"));
-     // }
+    componentDidMount() {
+        console.log("first render(mounting)");
+        axios
+        .get("http://localhost:5000/api/players")
+        // .then(res => console.log(res.data))
+        .then(res => this.setState({ players: res.data }))
+        .catch(err => console.log("error"));
+     }
 
       render() {
 

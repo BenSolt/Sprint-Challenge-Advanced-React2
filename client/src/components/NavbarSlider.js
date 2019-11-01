@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDarkMode } from "../hooks/useDarkMode";
-import { useDarkMode2 } from "../hooks/useDarkModeRed";
+//import { useDarkMode2 } from "../hooks/useDarkModeRed";
 
 const NavbarSlider = () => {
     const [darkMode, setDarkMode] = useDarkMode(false);
@@ -11,12 +11,13 @@ const NavbarSlider = () => {
     };
 
       // DarkMode Red
-  const [darkMode2, setDarkMode2] = useDarkMode2(false);
-  const toggleMode2 = e => {
-    e.preventDefault();
-    setDarkMode2(!darkMode2);
+
+//   const [darkMode2, setDarkMode2] = useDarkMode2(false);
+//   const toggleMode2 = e => {
+//     e.preventDefault();
+//     setDarkMode2(!darkMode2);
     
-  };
+//   };
   
     return (
       <nav className="navbar">
@@ -29,13 +30,14 @@ const NavbarSlider = () => {
         </div>
 
         {/* Dark Mode Red */}
-        <h2>Red</h2>
+
+        {/* <h2>Red</h2>
         <div className="dark-mode__toggle">
           <div
           onClick={toggleMode2}
           className={darkMode2 ? 'toggle toggled' : 'toggle'}
           />
-        </div>
+        </div> */}
 
   </nav>
 

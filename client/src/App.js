@@ -2,6 +2,7 @@ import React from 'react';
 
 import './App.css';
 import PlayerCard from "./components/PlayerCard";
+import NavbarSlider from "./components/NavbarSlider";
 
 class App extends React.Component {
 
@@ -19,8 +20,11 @@ class App extends React.Component {
 render() {
   return (
     <div className="App">
-      <div>Womans World Cup</div>
-     
+      <h1>Womans World Cup</h1>
+
+      <div className="Slider">
+        <NavbarSlider/>  
+      </div>
 
       <div>
         <PlayerCard/>
