@@ -24,7 +24,7 @@ test('contains world cup', () => {
   getByText(/world cup/i);
 });
 
-test('contains searched', async () => {
-  const { findByText } = await rtl.render(<App />);
-  findByText(/searched/i);
-});
+// test('contains searched', async () => {
+//   const { findByText } = await rtl.render(<App />);
+//   findByText(/searched/i);
+// });
