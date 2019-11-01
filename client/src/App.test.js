@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import NavbarSlider from "./components/NavbarSlider";
+import PlayerCard from "./components/PlayerCard";
+import * as rtl from '@testing-library/react';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+// it('renders without crashing', () => {
+//   const div = document.createElement('div');
+//   ReactDOM.render(<App />, div);
+//   ReactDOM.unmountComponentAtNode(div);
+// });
 
 
 test('navbar slider', () => {
@@ -14,7 +17,7 @@ test('navbar slider', () => {
   console.log(container);
 })
 
-test('navbar slider', () => {
+test('player card', () => {
   const container2 = rtl.render(<PlayerCard />)
   console.log(container2);
 })
