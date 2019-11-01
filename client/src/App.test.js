@@ -9,10 +9,17 @@ it('renders without crashing', () => {
 });
 
 
-test('Strike button is rendering', () => {
+test('navbar slider', () => {
   const container = rtl.render(<NavbarSlider />)
   console.log(container);
 })
+
+test('navbar slider', () => {
+  const container2 = rtl.render(<PlayerCard />)
+  console.log(container2);
+})
+
+
 
 test('contains womans', () => {
   const { getByText } = rtl.render(<App />);
@@ -24,7 +31,22 @@ test('contains world cup', () => {
   getByText(/world cup/i);
 });
 
-// test('contains searched', async () => {
-//   const { findByText } = await rtl.render(<App />);
-//   findByText(/searched/i);
-// });
+test('contains searched', async () => {
+  const { findByText } = await rtl.render(<App />);
+  findByText(/searched/i);
+});
+
+test('contains country', async () => {
+  const { findByText } = await rtl.render(<App />);
+  findByText(/country/i);
+});
+
+test('contains name', async () => {
+  const { findByText } = await rtl.render(<App />);
+  findByText(/name/i);
+});
+
+test('contains times searched', async () => {
+  const { findByText } = await rtl.render(<App />);
+  findByText(/times searched/i);
+});
